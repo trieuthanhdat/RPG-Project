@@ -65634,6 +65634,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 269907293, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_text
+      value: 'Chicken Kingdom
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 269907293, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1823811655261420054, guid: 6ad4e010f51ab28408507889464e07f5,
         type: 3}
       propertyPath: m_AnchorMax.x
