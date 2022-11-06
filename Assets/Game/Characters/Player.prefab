@@ -342,6 +342,7 @@ MonoBehaviour:
   respawnDelay: 3
   fadeTime: 0.2
   healthRegenPercentage: 25
+  manaRegenPercnetage: 40
   enemyHealthRegenPercentage: 15
 --- !u!114 &885903613
 MonoBehaviour:
@@ -439,6 +440,7 @@ MonoBehaviour:
     spot: {x: 0, y: 0}
   maxNavmeshProjectingDistance: 1
   speedFraction: 1
+  skillManager: {fileID: 0}
 --- !u!114 &8034091807551660498
 MonoBehaviour:
   m_ObjectHideFlags: 0
