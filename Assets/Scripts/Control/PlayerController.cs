@@ -7,6 +7,7 @@ using RPG.Resources;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using static UnityEngine.ParticleSystem;
 
 namespace RPG.Control
 {
@@ -112,11 +113,20 @@ namespace RPG.Control
             {
                 if(!GetComponent<Mover>().CanMoveTo(target))
                     return false;
-
+#if UNITY_IOS || UNITY_ANDROID
+                foreach (Touch touch in Input.touches)
+                {
+                    if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+                    {
+                        GetComponent<Mover>().StartMoveAction(target, speedFraction);
+                    }
+                }
+#endif
                 if (Input.GetMouseButton(1))
                 {
                     GetComponent<Mover>().StartMoveAction(target, speedFraction);
                 }
+
                 SetCursor(CursorType.movement);
                 return true;
             }
