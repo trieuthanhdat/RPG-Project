@@ -16,7 +16,7 @@ namespace RPG.Control
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavmeshProjectingDistance = 1f;
         public float speedFraction = 1f;
-        SkillManager skillManager = null;
+        public SkillManager skillManager = null;
         bool CanHoverOver = false;
         Health health;
         
@@ -77,6 +77,7 @@ namespace RPG.Control
 
             return skillManager.CheckSkillIsInAnimationState(keycode);
         }
+        
         private bool InteractWithSkill()
         {
             int keycode = -1;
