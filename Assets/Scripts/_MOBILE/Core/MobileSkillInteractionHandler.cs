@@ -5,23 +5,14 @@ using RPG.Control;
 
 public class MobileSkillInteractionHandler : MonoBehaviour
 {
-    [SerializeField]
     private PlayerController playerController;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent <PlayerController>();
     }
-
     public void ProcessSkill(int _skillNum){
         Debug.Log("Clicked on skill button: "+_skillNum);
-        playerController.skillManager.PlaySkillAnimation(_skillNum);
+        playerController.SkillManager.PlaySkillAnimation(_skillNum);
     }
 }

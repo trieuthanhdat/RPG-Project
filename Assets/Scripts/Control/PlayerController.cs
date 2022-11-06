@@ -16,10 +16,14 @@ namespace RPG.Control
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavmeshProjectingDistance = 1f;
         public float speedFraction = 1f;
-        public SkillManager skillManager = null;
-        bool CanHoverOver = false;
-        Health health;
-        
+        private SkillManager skillManager = null;
+        private bool CanHoverOver = false;
+        private Health health;
+
+        public SkillManager SkillManager
+        {
+            get { return skillManager; }
+        }
         [System.Serializable]
         struct CursorMapping
         {
