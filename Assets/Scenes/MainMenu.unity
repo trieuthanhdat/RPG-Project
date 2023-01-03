@@ -65632,7 +65632,37 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 18948823, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 269907293, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_text
+      value: Black Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 269907293, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 269907293, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 496665482, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_text
+      value: V0.002a
+      objectReference: {fileID: 0}
+    - target: {fileID: 501735921, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_text
+      value: 'The product is made by DSC Members Thanh Dat and Bao Duy, with the
+        goal of sharing and showcasing,  not for any individual purposes taken under
+        the name of DSC-developer student club. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 501735921, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 501735921, guid: 6ad4e010f51ab28408507889464e07f5, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1823811655261420054, guid: 6ad4e010f51ab28408507889464e07f5,
         type: 3}
